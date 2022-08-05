@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+    <script src="../dist/app.js"  async></script>
+    <link rel="stylesheet" href="./styles.css">    
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <div class="header-container">
+            <h1 class="title">Create Invoce</h1>
+            <form id="item-form">
+                <input id="price" type="number" step="any" required placeholder="Price USD$">
+                <input id="description" type="text" required placeholder="Description">
+                <button type="submit"><i class="fi fi-rr-add"></i></button>
+            </form>
+        </div>
+        <div class="items-container disabled">
+            <table id="items-table">
+            </table>
+        </div>
+        <div class="no-items-container ">
+            <h2 >No items in the invoce</h2>
+            <p >Add items in the form above</p>
+        </div>
+        <div class="total-price-container">
+            <button id="reset"> Reset </button>
+            <p class="total-price">USD $0,00</p>
+        </div>
+    </main>
+</body>
+</html>
